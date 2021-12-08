@@ -9,4 +9,14 @@ public class Division {
         return(a/b);
     }
 
+    public Double division2(int a, int b){
+        try {
+            return (double)(a/b);
+        }
+        catch (Exception ArithmeticException){
+            System.out.println("On ne peut pas diviser par 0 !!");
+        }
+        return null;
+    }
+
 }
